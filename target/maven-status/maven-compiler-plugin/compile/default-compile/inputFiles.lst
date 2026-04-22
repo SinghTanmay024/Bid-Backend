@@ -1,0 +1,12 @@
+C:\Users\Tanmay.s\Desktop\Bid-Backend\src\main\java\com\bidbackend\config\SwaggerConfig.java
+C:\Users\Tanmay.s\Desktop\Bid-Backend\src\main\java\com\bidbackend\dto\AuthResponse.java
+C:\Users\Tanmay.s\Desktop\Bid-Backend\src\main\java\com\bidbackend\BidBackendApplication.java
+C:\Users\Tanmay.s\Desktop\Bid-Backend\src\main\java\com\bidbackend\dto\AuthRequest.java
+C:\Users\Tanmay.s\Desktop\Bid-Backend\src\main\java\com\bidbackend\security\UserDetailsServiceImpl.java
+C:\Users\Tanmay.s\Desktop\Bid-Backend\src\main\java\com\bidbackend\repository\UserRepository.java
+C:\Users\Tanmay.s\Desktop\Bid-Backend\src\main\java\com\bidbackend\security\JwtAuthFilter.java
+C:\Users\Tanmay.s\Desktop\Bid-Backend\src\main\java\com\bidbackend\model\User.java
+C:\Users\Tanmay.s\Desktop\Bid-Backend\src\main\java\com\bidbackend\security\JwtUtil.java
+C:\Users\Tanmay.s\Desktop\Bid-Backend\src\main\java\com\bidbackend\service\AuthService.java
+C:\Users\Tanmay.s\Desktop\Bid-Backend\src\main\java\com\bidbackend\controller\AuthController.java
+C:\Users\Tanmay.s\Desktop\Bid-Backend\src\main\java\com\bidbackend\config\SecurityConfig.java
