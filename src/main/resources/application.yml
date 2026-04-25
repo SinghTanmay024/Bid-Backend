@@ -4,21 +4,13 @@ server:
 spring:
   data:
     mongodb:
-      # OPTION 1: MongoDB Atlas (recommended — free, no install)
-      # Paste your Atlas connection string below:
-      uri: mongodb+srv://sttanmay17_db_user:SXbfB4FlFqdMSUXz@cluster0.ihctfnk.mongodb.net/bidbackend?appName=Cluster0
-
-      # OPTION 2: Local MongoDB (if you have MongoDB installed)
-      # Comment out 'uri' above and uncomment these 3 lines:
-      # host: localhost
-      # port: 27017
-      # database: bidbackend
+      uri: ${MONGODB_URI}
 
   mail:
     host: smtp.gmail.com
     port: 587
-    username: sttanmay17@gmail.com
-    password: mdqnxgngbwqjqjuk   # Google App Password (not your login password)
+    username: ${MAIL_USERNAME}
+    password: ${MAIL_PASSWORD}
     properties:
       mail:
         smtp:
@@ -27,24 +19,20 @@ spring:
             enable: true
 
 jwt:
-  secret: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970
+  secret: ${JWT_SECRET}
   expiration: 86400000
 
 cloudinary:
-  cloud-name: dwsdyd97f
-  api-key: 517163347753126
-  api-secret: CLOUDINARY_URL=cloudinary://517163347753126:**********@dwsdyd97f
+  cloud-name: ${CLOUDINARY_CLOUD_NAME}
+  api-key: ${CLOUDINARY_API_KEY}
+  api-secret: ${CLOUDINARY_API_SECRET}
 
 razorpay:
-  key-id: YOUR_RAZORPAY_KEY_ID
-  key-secret: YOUR_RAZORPAY_KEY_SECRET
+  key-id: ${RAZORPAY_KEY_ID}
+  key-secret: ${RAZORPAY_KEY_SECRET}
 
 springdoc:
   swagger-ui:
     path: /swagger-ui.html
   api-docs:
     path: /v3/api-docs
-
-
-
-
