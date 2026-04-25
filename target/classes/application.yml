@@ -2,21 +2,49 @@ server:
   port: 8080
 
 spring:
-  mongodb:
-    embedded:
-      version: 4.4.3
   data:
     mongodb:
-      host: localhost
-      port: 27017
-      database: bidbackend
+      # OPTION 1: MongoDB Atlas (recommended — free, no install)
+      # Paste your Atlas connection string below:
+      uri: mongodb+srv://sttanmay17_db_user:SXbfB4FlFqdMSUXz@cluster0.ihctfnk.mongodb.net/bidbackend?appName=Cluster0
+
+      # OPTION 2: Local MongoDB (if you have MongoDB installed)
+      # Comment out 'uri' above and uncomment these 3 lines:
+      # host: localhost
+      # port: 27017
+      # database: bidbackend
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: sttanmay17@gmail.com
+    password: mdqnxgngbwqjqjuk   # Google App Password (not your login password)
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
 
 jwt:
   secret: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970
   expiration: 86400000
+
+cloudinary:
+  cloud-name: dwsdyd97f
+  api-key: 517163347753126
+  api-secret: CLOUDINARY_URL=cloudinary://517163347753126:**********@dwsdyd97f
+
+razorpay:
+  key-id: YOUR_RAZORPAY_KEY_ID
+  key-secret: YOUR_RAZORPAY_KEY_SECRET
 
 springdoc:
   swagger-ui:
     path: /swagger-ui.html
   api-docs:
     path: /v3/api-docs
+
+
+
+

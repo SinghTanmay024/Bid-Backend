@@ -7,10 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class AuthResponse {
+public class UploadResponse {
 
-    private String token;
-    private String userId;
-    private String email;
-    private String role;
+    private String url;   // Cloudinary secure CDN URL
 }

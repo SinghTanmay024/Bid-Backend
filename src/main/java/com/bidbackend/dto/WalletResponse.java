@@ -7,10 +7,8 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class AuthResponse {
+public class WalletResponse {
 
-    private String token;
     private String userId;
-    private String email;
-    private String role;
+    private Integer coinBalance;
 }

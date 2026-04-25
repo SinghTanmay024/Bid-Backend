@@ -80,11 +80,24 @@
             <version>1.7.0</version>
         </dependency>
 
-        <!-- Embedded MongoDB (in-memory, no install needed) -->
+        <!-- Spring Mail (OTP emails) -->
         <dependency>
-            <groupId>de.flapdoodle.embed</groupId>
-            <artifactId>de.flapdoodle.embed.mongo.spring27x</artifactId>
-            <version>4.12.2</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-mail</artifactId>
+        </dependency>
+
+        <!-- Cloudinary (image upload) -->
+        <dependency>
+            <groupId>com.cloudinary</groupId>
+            <artifactId>cloudinary-http44</artifactId>
+            <version>1.36.0</version>
+        </dependency>
+
+        <!-- Razorpay Java SDK -->
+        <dependency>
+            <groupId>com.razorpay</groupId>
+            <artifactId>razorpay-java</artifactId>
+            <version>1.4.5</version>
         </dependency>
 
         <!-- Spring Boot Test -->
