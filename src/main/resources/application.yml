@@ -17,8 +17,8 @@ spring:
   mail:
     host: smtp.gmail.com
     port: 587
-    username: sttanmay17@gmail.com
-    password: mdqnxgngbwqjqjuk   # Google App Password (not your login password)
+    username: 
+    password:    # Google App Password (not your login password)
     properties:
       mail:
         smtp:
@@ -31,9 +31,9 @@ jwt:
   expiration: 86400000
 
 cloudinary:
-  cloud-name: dwsdyd97f
-  api-key: 517163347753126
-  api-secret: CLOUDINARY_URL=cloudinary://517163347753126:**********@dwsdyd97f
+  cloud-name:
+  api-key: 
+  api-secret: cloudinary://517163347753126:**********@dwsdyd97f
 
 razorpay:
   key-id: YOUR_RAZORPAY_KEY_ID
