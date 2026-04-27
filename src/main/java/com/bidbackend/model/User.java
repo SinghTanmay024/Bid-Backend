@@ -5,6 +5,8 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.time.Instant;
+
 @Document(collection = "users")
 @Data
 @Builder
@@ -21,4 +23,12 @@ public class User {
     private String password;
 
     private String role;
+
+    /** If true the account is suspended — all protected actions return 403. */
+    @Builder.Default
+    private boolean blocked = false;
+
+    /** Timestamp used for fraud detection (account age check). */
+    @Builder.Default
+    private Instant createdAt = Instant.now();
 }

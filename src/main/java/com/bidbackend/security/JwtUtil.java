@@ -20,6 +20,10 @@ public class JwtUtil {
     @Value("${jwt.expiration}")
     private long expiration;
 
+    /**
+     * Generate a JWT with the user's email as subject.
+     * Role is embedded as a claim so the filter doesn't need a DB round-trip.
+     */
     public String generateToken(String email) {
         return Jwts.builder()
                 .setSubject(email)

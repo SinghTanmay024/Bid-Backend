@@ -4,19 +4,17 @@ import lombok.Data;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.Size;
 
+/**
+ * Spec: POST /api/auth/forgot-password
+ * Body: { email }
+ * Response: { message: "Reset link sent" }
+ * Always returns 200 regardless of whether the email exists.
+ */
 @Data
 public class ForgotPasswordRequest {
 
     @NotBlank
     @Email
     private String email;
-
-    @NotBlank
-    private String otp;
-
-    @NotBlank
-    @Size(min = 6)
-    private String newPassword;
 }

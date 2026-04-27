@@ -7,9 +7,9 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class AuthResponse {
+public class AdminStatsResponse {
 
-    private String token;
-    private String email;
-    private String role;
+    private Long totalUsers;
+    private Long activeContests;
+    private Double totalRevenue;
 }

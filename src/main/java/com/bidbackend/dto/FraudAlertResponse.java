@@ -7,9 +7,9 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class AuthResponse {
+public class FraudAlertResponse {
 
-    private String token;
-    private String email;
-    private String role;
+    private String userId;   // email
+    private String reason;
+    private Integer count;
 }
